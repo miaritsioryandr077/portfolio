@@ -32,9 +32,9 @@ export default function Contact() {
   
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
 
-  const serviceID = 'service_d0yjzan';
-  const templateID = 'template_xubwimb'; 
-  const publicKey = '5fOyACsroUdJUXz4T';
+  const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '';
+  const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '';
+  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '';
 
   const onSubmit = async (data: FormData) => {
     setIsSending(true);
