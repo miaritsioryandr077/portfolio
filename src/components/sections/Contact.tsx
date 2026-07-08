@@ -32,10 +32,9 @@ export default function Contact() {
   
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
 
-  // REMPLACEZ CES VALEURS PAR LES VÔTRES
-  const serviceID = 'service_d0yjzan'; // Votre Service ID
-  const templateID = 'template_xubwimb'; // Votre Template ID
-  const publicKey = '5fOyACsroUdJUXz4T'; // Votre Public Key
+  const serviceID = 'service_d0yjzan';
+  const templateID = 'template_xubwimb'; 
+  const publicKey = '5fOyACsroUdJUXz4T';
 
   const onSubmit = async (data: FormData) => {
     setIsSending(true);
@@ -141,12 +140,12 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-2 space-y-8"
           >
-<div className="glass p-8 rounded-2xl">
-  <h3 className="text-2xl font-bold font-space text-white mb-6">
-    Informations de contact
-  </h3>
+          <div className="glass p-8 rounded-2xl">
+            <h3 className="text-2xl font-bold font-space text-white mb-6">
+              Informations de contact
+            </h3>
 
-  <div className="space-y-6 mb-8">
+            <div className="space-y-6 mb-8">
 
     {/* Téléphone */}
     <div className="flex items-start gap-4 text-foreground/80">
