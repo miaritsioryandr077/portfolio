@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Projects() {
   const projects = [
@@ -79,6 +80,11 @@ export default function Projects() {
                   src={project.image} 
                   alt={project.title} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                  onError={(e) => {
+                    // Fallback en cas d'erreur de chargement
+                    (e.target as HTMLImageElement).src = '/placeholder-image.jpg';
+                  }}
                 />
                 
                 {/* Floating links on image */}
@@ -102,11 +108,11 @@ export default function Projects() {
                 </div>
               </div>
               
-              <div className="p-8">
+              <div className="p-6 sm:p-8">
                 <span className="text-sm font-medium text-accent mb-2 display-block">
                   {project.category}
                 </span>
-                <h3 className="text-2xl font-bold font-space text-white mb-3 mt-1 group-hover:text-primary transition-colors">
+                <h3 className="text-xl sm:text-2xl font-bold font-space text-white mb-3 mt-1 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
                 <p className="text-foreground/70 mb-6 text-sm leading-relaxed">

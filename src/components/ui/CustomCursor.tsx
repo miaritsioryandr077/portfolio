@@ -7,8 +7,20 @@ export default function CustomCursor() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // Détecter si l'appareil est mobile
+    const checkMobile = () => {
+      const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+      setIsMobile(isTouchDevice);
+    };
+
+    checkMobile();
+
+    // Si c'est un appareil mobile, ne pas activer le curseur personnalisé
+    if (isMobile) return;
+
     const updateMousePosition = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
       if (!isVisible) setIsVisible(true);
@@ -42,9 +54,10 @@ export default function CustomCursor() {
         el.removeEventListener("mouseleave", handleHoverEnd);
       });
     };
-  }, [isVisible]);
+  }, [isVisible, isMobile]);
 
-  if (!isVisible) return null;
+  // Ne rien afficher sur mobile
+  if (!isVisible || isMobile) return null;
 
   return (
     <>
