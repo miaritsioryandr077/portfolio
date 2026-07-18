@@ -3,18 +3,20 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import Flag from "react-flagkit";
 import { useLanguage } from "@/context/LanguageContext";
 import { Language } from "@/i18n/translations";
 
-const languages: { code: Language; label: string }[] = [
-  { code: "fr", label: "Français" },
-  { code: "en", label: "English" },
-  { code: "mg", label: "Malagasy" },
-  { code: "de", label: "Deutsch" },
-  { code: "es", label: "Español" },
-  { code: "ja", label: "日本語" },
-  { code: "zh", label: "中文" },
-  { code: "ar", label: "العربية" },
+// Association des langues avec le code pays officiel de leur drapeau respectif
+export const languages: { code: Language; label: string; countryCode: string }[] = [
+  { code: "fr", label: "Français", countryCode: "FR" },
+  { code: "en", label: "English", countryCode: "GB" },
+  { code: "mg", label: "Malagasy", countryCode: "MG" },
+  { code: "de", label: "Deutsch", countryCode: "DE" },
+  { code: "es", label: "Español", countryCode: "ES" },
+  { code: "ja", label: "日本語", countryCode: "JP" },
+  { code: "zh", label: "中文", countryCode: "CN" },
+  { code: "ar", label: "العربية", countryCode: "SA" },
 ];
 
 export default function LanguageSwitcher() {
@@ -38,12 +40,20 @@ export default function LanguageSwitcher() {
     return <div className="w-12 h-6" />; // placeholder pour éviter le saut au chargement
   }
 
+  // Trouver le code pays de la langue actuellement sélectionnée
+  const currentLang = languages.find((lang) => lang.code === language);
+
   return (
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1 text-sm font-medium text-foreground/70 hover:text-white transition-colors"
+        className="flex items-center gap-2 text-sm font-medium text-foreground/70 hover:text-white transition-colors"
       >
+        {currentLang && (
+          <div className="flex items-center shrink-0 w-4 h-4 rounded-sm overflow-hidden">
+            <Flag country={currentLang.countryCode} size={16} />
+          </div>
+        )}
         <span className="uppercase">{language}</span>
         <ChevronDown size={14} className={`transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
       </button>
@@ -64,13 +74,16 @@ export default function LanguageSwitcher() {
                   setLanguage(lang.code);
                   setIsOpen(false);
                 }}
-                className={`block w-full text-left px-4 py-2 text-sm transition-colors ${
+                className={`flex items-center gap-2 w-full text-left px-4 py-2 text-sm transition-colors ${
                   language === lang.code
                     ? "bg-primary/20 text-primary"
                     : "text-foreground/70 hover:bg-white/5 hover:text-white"
                 }`}
               >
-                {lang.label}
+                <div className="flex items-center shrink-0 w-4 h-4 rounded-sm overflow-hidden">
+                  <Flag country={lang.countryCode} size={16} />
+                </div>
+                <span>{lang.label}</span>
               </button>
             ))}
           </motion.div>
