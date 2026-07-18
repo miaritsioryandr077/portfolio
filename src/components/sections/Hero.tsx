@@ -3,13 +3,12 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download, Briefcase } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useLanguage } from "@/context/LanguageContext";
+import { translations } from "@/i18n/translations";
 
 export default function Hero() {
-  const titles = [
-    "Développeur Full-Stack Web",
-    "Étudiant en Génie Logiciel et Base de Données",
-    "Concepteur d'Applications Web Modernes",
-  ];
+  const { language, t } = useLanguage();
+  const titles = translations[language]?.hero?.titles || translations["fr"].hero.titles;
 
   const [displayedText, setDisplayedText] = useState("");
   const [titleIndex, setTitleIndex] = useState(0);
@@ -112,7 +111,7 @@ export default function Hero() {
             <span className="absolute inline-flex h-2 w-2 sm:h-3 sm:w-3 rounded-full bg-primary opacity-75 animate-ping"></span>
             <span className="relative inline-flex h-1.5 w-1.5 sm:h-2.5 sm:w-2.5 rounded-full bg-primary"></span>
           </span>
-          <span className="text-[10px] sm:text-xs md:text-sm">Disponible pour de nouvelles opportunités</span>
+          <span className="text-[10px] sm:text-xs md:text-sm">{t("hero.badge")}</span>
         </motion.div>
 
         {/* Name */}
@@ -167,9 +166,7 @@ export default function Hero() {
           }}
           className="text-sm sm:text-base md:text-lg lg:text-xl text-foreground/70 max-w-3xl mb-8 sm:mb-10 md:mb-12 font-poppins leading-relaxed px-2 sm:px-4"
         >
-          Je conçois et développe des applications web modernes,
-          performantes et évolutives, en combinant un design élégant,
-          une expérience utilisateur fluide et une architecture robuste.
+          {t("hero.description")}
         </motion.p>
 
         {/* Buttons */}
@@ -193,7 +190,7 @@ export default function Hero() {
               size={18}
               className="group-hover:rotate-12 transition-transform"
             />
-            Voir mes projets
+            {t("hero.btnProject")}
           </motion.a>
 
           <motion.a
@@ -208,7 +205,7 @@ export default function Hero() {
               size={18}
               className="group-hover:-translate-y-1 transition-transform"
             />
-            Télécharger CV
+            {t("hero.btnDownload")}
           </motion.a>
         </motion.div>
       </div>

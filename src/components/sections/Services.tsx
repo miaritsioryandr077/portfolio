@@ -9,38 +9,40 @@ import {
   Database, 
   Gauge 
 } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Services() {
+  const { t } = useLanguage();
   const services = [
     {
       icon: <Globe2 size={32} className="text-primary" />,
-      title: "Développement Web Fullstack",
-      description: "Création d'applications web complètes, de l'interface utilisateur à l'architecture de la base de données, avec les frameworks modernes."
+      title: t("services.items.s1.title"),
+      description: t("services.items.s1.desc")
     },
     {
       icon: <Database size={32} className="text-secondary" />,
-      title: "Création API REST",
-      description: "Conception et développement d'APIs robustes, sécurisées et documentées pour alimenter vos applications."
+      title: t("services.items.s2.title"),
+      description: t("services.items.s2.desc")
     },
     {
       icon: <Code2 size={32} className="text-accent" />,
-      title: "Développement Front-end React / Next.js",
-      description: "Intégration d'interfaces utilisateur dynamiques, réactives et optimisées pour le SEO avec la puissance de Next.js."
+      title: t("services.items.s3.title"),
+      description: t("services.items.s3.desc")
     },
     {
       icon: <Server size={32} className="text-pink-500" />,
-      title: "Développement Back-end Node.js / Laravel",
-      description: "Développement d'architectures serveur backend scalables, sécurisées et capables de gérer des flux de données importants."
+      title: t("services.items.s4.title"),
+      description: t("services.items.s4.desc")
     },
     {
       icon: <Palette size={32} className="text-purple-400" />,
-      title: "Intégration UI/UX moderne",
-      description: "Traduction minutieuse de maquettes en code parfait, avec intégration d'animations fluides et du glassmorphism."
+      title: t("services.items.s5.title"),
+      description: t("services.items.s5.desc")
     },
     {
       icon: <Gauge size={32} className="text-green-400" />,
-      title: "Optimisation Performance",
-      description: "Audit et optimisation du code existant, du temps de chargement, du SEO technique et de l'accessibilité."
+      title: t("services.items.s6.title"),
+      description: t("services.items.s6.desc")
     }
   ];
 
@@ -56,11 +58,11 @@ export default function Services() {
         >
           <div className="inline-flex items-center gap-4 mb-4 justify-center">
             <div className="h-px w-12 bg-secondary"></div>
-            <span className="text-secondary font-space tracking-widest text-sm uppercase">Services</span>
+            <span className="text-secondary font-space tracking-widest text-sm uppercase">{t("services.subtitle")}</span>
             <div className="h-px w-12 bg-secondary"></div>
           </div>
           <h2 className="text-3xl md:text-5xl font-space font-bold mb-6">
-            Ce que je peux <span className="text-gradient">faire pour vous</span>
+            {t("services.title1")} <span className="text-gradient">{t("services.title2")}</span>
           </h2>
         </motion.div>
 

@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import { BrainCircuit, Lightbulb, PenTool, BookOpen } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function About() {
+  const { t } = useLanguage();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -22,23 +24,23 @@ export default function About() {
   const items = [
     {
       icon: <BrainCircuit size={32} className="text-primary" />,
-      title: "Résolution de problèmes",
-      description: "J'aime relever des défis complexes et concevoir des architectures élégantes pour y répondre de manière optimale.",
+      title: t("about.items.problemSolving.title"),
+      description: t("about.items.problemSolving.desc"),
     },
     {
       icon: <Lightbulb size={32} className="text-secondary" />,
-      title: "Créativité",
-      description: "Chaque ligne de code est une opportunité de créer une expérience interactive unique, moderne et impactante.",
+      title: t("about.items.creativity.title"),
+      description: t("about.items.creativity.desc"),
     },
     {
       icon: <PenTool size={32} className="text-accent" />,
-      title: "Passion du développement",
-      description: "Le développement n'est pas seulement un métier pour moi, c'est une véritable passion exercée au quotidien avec rigueur.",
+      title: t("about.items.passion.title"),
+      description: t("about.items.passion.desc"),
     },
     {
       icon: <BookOpen size={32} className="text-pink-500" />,
-      title: "Apprentissage continu",
-      description: "Le web évolue vite. Je me forme en continu pour toujours tirer parti des dernières innovations de la stack moderne.",
+      title: t("about.items.learning.title"),
+      description: t("about.items.learning.desc"),
     },
   ];
 
@@ -53,12 +55,10 @@ export default function About() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-space font-bold mb-6">
-            À propos de <span className="text-gradient">moi</span>
+            {t("about.title1")} <span className="text-gradient">{t("about.title2")}</span>
           </h2>
           <p className="text-foreground/70 max-w-3xl mx-auto text-lg leading-relaxed font-inter">
-            Développeur passionné par la création d'applications web modernes, performantes et scalables. 
-            Mon approche combine une forte base en ingénierie logicielle avec un sens aigu du détail 
-            visuel, afin d'offrir la meilleure expérience utilisateur possible.
+            {t("about.description")}
           </p>
         </motion.div>
 

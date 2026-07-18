@@ -1,0 +1,193 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "services": "Dienstleistungen",
+    "experience": "Erfahrung",
+    "contact": "Kontakt",
+    "contactMe": "Kontaktieren Sie mich"
+  },
+  "hero": {
+    "badge": "Verfügbar für neue Möglichkeiten",
+    "titles": [
+      "Full-Stack Web-Entwickler",
+      "Student der Softwaretechnik und Datenbanken",
+      "Designer moderner Webanwendungen"
+    ],
+    "description": "Ich entwerfe und entwickle moderne, leistungsstarke und skalierbare Webanwendungen und kombiniere dabei elegantes Design, nahtlose Benutzererfahrung und eine robuste Architektur.",
+    "btnProject": "Meine Projekte ansehen",
+    "btnDownload": "Lebenslauf herunterladen"
+  },
+  "about": {
+    "title1": "Über",
+    "title2": "mich",
+    "description": "Ich bin ein Entwickler, der leidenschaftlich gerne moderne, performante und skalierbare Webanwendungen erstellt. Mein Ansatz kombiniert ein starkes Fundament in der Softwaretechnik mit einem scharfen Blick für visuelle Details, um die bestmögliche Benutzererfahrung zu bieten.",
+    "items": {
+      "problemSolving": {
+        "title": "Problemlösung",
+        "desc": "Ich stelle mich gerne komplexen Herausforderungen und entwerfe elegante Architekturen, um diese optimal zu lösen."
+      },
+      "creativity": {
+        "title": "Kreativität",
+        "desc": "Jede Codezeile ist eine Gelegenheit, ein einzigartiges, modernes und wirkungsvolles interaktives Erlebnis zu schaffen."
+      },
+      "passion": {
+        "title": "Leidenschaft für Entwicklung",
+        "desc": "Entwicklung ist für mich nicht nur ein Job; es ist eine wahre Leidenschaft, die ich täglich mit Strenge ausübe."
+      },
+      "learning": {
+        "title": "Kontinuierliches Lernen",
+        "desc": "Das Web entwickelt sich schnell weiter. Ich bilde mich ständig weiter, um stets die neuesten Innovationen der modernen Stacks nutzen zu können."
+      }
+    }
+  },
+  "skills": {
+    "title1": "Mein",
+    "title2": "Technisches Arsenal",
+    "desc": "Eine vollständige Beherrschung einer breiten Palette von Technologien, um durchgängige digitale Lösungen zu entwickeln.",
+    "categories": {
+      "frontend": "Front-End-Entwicklung",
+      "backend": "Back-End-Entwicklung",
+      "languages": "Programmiersprachen",
+      "databases": "Datenbanken",
+      "tools": "Versionierung & Bereitstellung",
+      "ide": "Entwicklungsumgebungen",
+      "os": "Betriebssysteme"
+    }
+  },
+  "projects": {
+    "subtitle": "Portfolio",
+    "title1": "Meine Neuesten",
+    "title2": "Projekte",
+    "items": {
+      "p1": {
+        "cat": "Fullstack-Anwendung",
+        "title": "Zentralisiertes Personalverwaltungssystem des Staates",
+        "desc": "Konzeption und Entwicklung einer Webanwendung zur zentralisierten Verwaltung des Staatspersonals. (Praktikumsprojekt)"
+      },
+      "p2": {
+        "cat": "Fullstack-Anwendung",
+        "title": "Anwendung zur Verwaltung von Restaurantbestellungen",
+        "desc": "Entwicklung einer Anwendung zur Verwaltung von Lebensmittelbestellungen und zur Verfolgung des Restaurantbetriebs."
+      },
+      "p3": {
+        "cat": "Fullstack-Anwendung",
+        "title": "Anwendung zur Verwaltung des Produktbestands",
+        "desc": "Erstellung einer Anwendung, die das Hinzufügen von Produkten, die Anzeige von Listen und die Visualisierung einer Zusammenfassung (Min.-, Max.-, und Gesamtwerte) über ein Kreisdiagramm ermöglicht."
+      },
+      "p4": {
+        "cat": "Fullstack-Anwendung",
+        "title": "Tankstellenverwaltungsanwendung",
+        "desc": "Entwicklung eines Systems zur Verwaltung von Kraftstoff, Kundenservice und Wartung. Hauptmerkmale: CRUD-Operationen, Kundenverfolgung, Benachrichtigungen bei niedrigem Lagersitz und Statistiken."
+      }
+    },
+    "btnMore": "Mehr auf GitHub ansehen"
+  },
+  "services": {
+    "subtitle": "Dienstleistungen",
+    "title1": "Was ich für",
+    "title2": "Sie tun kann",
+    "items": {
+      "s1": {
+        "title": "Fullstack-Webentwicklung",
+        "desc": "Erstellung vollständiger Webanwendungen, von der Benutzeroberfläche bis zur Datenbankarchitektur, mit modernen Frameworks."
+      },
+      "s2": {
+        "title": "Erstellung von REST-APIs",
+        "desc": "Design und Entwicklung robuster, sicherer und dokumentierter APIs zur Unterstützung Ihrer Anwendungen."
+      },
+      "s3": {
+        "title": "React / Next.js Front-End-Entwicklung",
+        "desc": "Integration dynamischer, reaktionsschneller und SEO-optimierter Benutzeroberflächen mit der Leistung von Next.js."
+      },
+      "s4": {
+        "title": "Node.js / Laravel Back-End-Entwicklung",
+        "desc": "Entwicklung skalierbarer und sicherer Backend-Serverarchitekturen, die große Datenströme bewältigen können."
+      },
+      "s5": {
+        "title": "Moderne UI/UX-Integration",
+        "desc": "Sorgfältige Übersetzung von Mockups in perfekten Code, mit fließenden Animationen und Glassmorphismus."
+      },
+      "s6": {
+        "title": "Leistungsoptimierung",
+        "desc": "Prüfung und Optimierung von vorhandenem Code, Ladezeiten, technischem SEO und Zugänglichkeit."
+      }
+    }
+  },
+  "experience": {
+    "title1": "Mein Weg &",
+    "title2": "Erfahrung",
+    "items": {
+      "e1": {
+        "title": "Nationale Hochschule für Informatik (ENI)",
+        "company": "Universität von Fianarantsoa, Madagaskar",
+        "period": "2026 - Heute",
+        "desc": "Drittes Jahr im berufsqualifizierenden Bachelorstudiengang für Softwaretechnik und Datenbanken"
+      },
+      "e2": {
+        "title": "Unternehmenspraktikum",
+        "company": "Ministerium für Wirtschaft und Finanzen (MEF) - Generaldirektion für Finanzkontrolle (DGCF)",
+        "period": "2025 (Sept. - Nov.)",
+        "desc": "Design und Entwicklung einer Webanwendung zur zentralisierten Verwaltung des Staatspersonals."
+      },
+      "e3": {
+        "title": "Nationale Hochschule für Informatik (ENI)",
+        "company": "Universität von Fianarantsoa, Madagaskar",
+        "period": "2025",
+        "desc": "Zweites Jahr im berufsqualifizierenden Bachelorstudiengang für Softwaretechnik und Datenbanken"
+      },
+      "e4": {
+        "title": "Nationale Hochschule für Informatik (ENI)",
+        "company": "Universität von Fianarantsoa, Madagaskar",
+        "period": "2024",
+        "desc": "Erstes Jahr im berufsqualifizierenden Bachelorstudiengang für Informatik"
+      },
+      "e5": {
+        "title": "Abitur",
+        "company": "Gymnasium Sainte Famille Anosivavaka (LSFA)",
+        "period": "2023",
+        "desc": "Erhalt des Abiturdiploms Serie D (Mit Auszeichnung)"
+      }
+    }
+  },
+  "contact": {
+    "title1": "Lassen Sie uns über Ihr",
+    "title2": "Projekt sprechen",
+    "desc": "Haben Sie eine Projektidee, einen technischen Bedarf oder möchten Sie sich einfach nur unterhalten? Zögern Sie nicht, mich zu kontaktieren.",
+    "info": {
+      "title": "Kontaktinformationen",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "location": "Standort",
+      "locationVal": "Antananarivo, Madagaskar",
+      "portfolio": "Portfolio",
+      "socials": "Soziale Netzwerke"
+    },
+    "form": {
+      "nameLabel": "Vollständiger Name",
+      "namePlaceholder": "Ihr vollständiger Name",
+      "nameReq": "Name ist erforderlich",
+      "emailLabel": "E-Mail Adresse",
+      "emailPlaceholder": "Ihre E-Mail",
+      "emailReq": "E-Mail ist erforderlich",
+      "emailInv": "Ungültige E-Mail",
+      "subjectLabel": "Betreff",
+      "subjectPlaceholder": "Ihr Betreff",
+      "subjectReq": "Betreff ist erforderlich",
+      "msgLabel": "Nachricht",
+      "msgPlaceholder": "Ihre Nachricht",
+      "msgReq": "Nachricht ist erforderlich",
+      "btnSending": "Wird gesendet...",
+      "btnSend": "Nachricht senden",
+      "success": "✅ Ihre Nachricht wurde erfolgreich gesendet! Ich werde Ihnen so schnell wie möglich antworten.",
+      "error": "❌ Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie mich direkt per E-Mail."
+    }
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "design": "Design & Code mit ❤️ von Miaritsiory",
+    "ariaTop": "Zurück nach oben"
+  }
+}

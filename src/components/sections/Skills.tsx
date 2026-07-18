@@ -38,6 +38,7 @@ import {
   FaTerminal
 } from "react-icons/fa";
 import { IconType } from "react-icons";
+import { useLanguage } from "@/context/LanguageContext";
 
 // Définition des types pour les compétences
 type SkillWithIcon = {
@@ -59,9 +60,10 @@ type SkillWithImage = {
 type Skill = SkillWithIcon | SkillWithImage;
 
 export default function Skills() {
+  const { t } = useLanguage();
   const skillCategories: { title: string; skills: Skill[] }[] = [
     {
-      title: "Développement Front-end",
+      title: t("skills.categories.frontend"),
       skills: [
         { name: "HTML", icon: SiHtml5, color: "#E34F26" },
         { name: "CSS", icon: FaCss3Alt, color: "#1572B6" },
@@ -74,7 +76,7 @@ export default function Skills() {
       ],
     },
     {
-      title: "Développement Back-end",
+      title: t("skills.categories.backend"),
       skills: [
         { name: "PHP", icon: SiPhp, color: "#777BB4" },
         { name: "Laravel", icon: SiLaravel, color: "#FF2D20" },
@@ -85,7 +87,7 @@ export default function Skills() {
       ],
     },
     {
-      title: "Langages de programmation",
+      title: t("skills.categories.languages"),
       skills: [
         { name: "C", icon: SiC, color: "#A8B9CC" },
         { name: "C++", icon: SiCplusplus, color: "#00599C" },
@@ -95,7 +97,7 @@ export default function Skills() {
       ],
     },
     {
-      title: "Bases de données",
+      title: t("skills.categories.databases"),
       skills: [
         { name: "MySQL", icon: SiMysql, color: "#4479A1" },
         { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
@@ -103,7 +105,7 @@ export default function Skills() {
       ],
     },
     {
-      title: "Versionnement & Déploiement",
+      title: t("skills.categories.tools"),
       skills: [
         { name: "Git", icon: SiGit, color: "#F05032" },
         { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
@@ -113,7 +115,7 @@ export default function Skills() {
       ],
     },
     {
-      title: "Environnements de développement",
+      title: t("skills.categories.ide"),
       skills: [
         { 
           name: "VS Code", 
@@ -139,7 +141,7 @@ export default function Skills() {
       ],
     },
     {
-      title: "Système d'exploitation",
+      title: t("skills.categories.os"),
       skills: [
         { name: "Windows", icon: FaWindows, color: "#0078D4" },
         { name: "Ubuntu", icon: SiUbuntu, color: "#E95420" },
@@ -159,11 +161,10 @@ export default function Skills() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-space font-bold mb-6">
-            Mon <span className="text-gradient">Arsenal Technique</span>
+            {t("skills.title1")} <span className="text-gradient">{t("skills.title2")}</span>
           </h2>
           <p className="text-foreground/70 max-w-2xl mx-auto text-lg">
-            Une maîtrise complète d'un large éventail de technologies 
-            pour construire des solutions numériques de bout en bout.
+            {t("skills.desc")}
           </p>
         </motion.div>
 

@@ -2,46 +2,48 @@
 
 import { motion } from "framer-motion";
 import { Briefcase, GraduationCap } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Experience() {
+  const { t } = useLanguage();
   const experiences = [
     {
-      title: "Ecole Nationale d'Informatique (ENI)",
-      company: "Université de Fianarantsoa, Madagascar",
-      period: "2026 - Présent",
-      description: "Troisième année de Licence Professionnelle en Génie logiciel et Base de Données",
+      title: t("experience.items.e1.title"),
+      company: t("experience.items.e1.company"),
+      period: t("experience.items.e1.period"),
+      description: t("experience.items.e1.desc"),
       icon: <GraduationCap size={20} />,
       type: "education"
     },
     {
-      title: "Stage en Entreprise",
-      company: "Ministère de l'Economie et des Finances (MEF) - Direction Générale du Contrôle Financier (DGCF)",
-      period: "2025 (Sept. - Nov.)",
-      description: "Conception et réalisation d'une application web pour la gestion centralisée des personnels de l'Etat.",
+      title: t("experience.items.e2.title"),
+      company: t("experience.items.e2.company"),
+      period: t("experience.items.e2.period"),
+      description: t("experience.items.e2.desc"),
       icon: <Briefcase size={20} />,
       type: "work"
     },
     {
-      title: "Ecole Nationale d'Informatique (ENI)",
-      company: "Université de Fianarantsoa, Madagascar",
-      period: "2025",
-      description: "Deuxième année de Licence Professionnelle en Génie logiciel et Base de Données",
+      title: t("experience.items.e3.title"),
+      company: t("experience.items.e3.company"),
+      period: t("experience.items.e3.period"),
+      description: t("experience.items.e3.desc"),
       icon: <GraduationCap size={20} />,
       type: "education"
     },
     {
-      title: "Ecole Nationale d'Informatique (ENI)",
-      company: "Université de Fianarantsoa, Madagascar",
-      period: "2024",
-      description: "Première année de Licence Professionnelle en Informatique",
+      title: t("experience.items.e4.title"),
+      company: t("experience.items.e4.company"),
+      period: t("experience.items.e4.period"),
+      description: t("experience.items.e4.desc"),
       icon: <GraduationCap size={20} />,
       type: "education"
     },
     {
-      title: "Baccalauréat",
-      company: "Lycée Sainte Famille Anosivavaka (LSFA)",
-      period: "2023",
-      description: "Obtention du diplôme de Baccalauréat Série D (Mention Bien)",
+      title: t("experience.items.e5.title"),
+      company: t("experience.items.e5.company"),
+      period: t("experience.items.e5.period"),
+      description: t("experience.items.e5.desc"),
       icon: <GraduationCap size={20} />,
       type: "education"
     }
@@ -58,7 +60,7 @@ export default function Experience() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-space font-bold mb-6">
-            Mon Parcours & <span className="text-gradient">Expérience</span>
+            {t("experience.title1")} <span className="text-gradient">{t("experience.title2")}</span>
           </h2>
         </motion.div>
 

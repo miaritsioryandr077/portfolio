@@ -1,0 +1,193 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "services": "Services",
+    "experience": "Expérience",
+    "contact": "Contact",
+    "contactMe": "Me Contacter"
+  },
+  "hero": {
+    "badge": "Disponible pour de nouvelles opportunités",
+    "titles": [
+      "Développeur Full-Stack Web",
+      "Étudiant en Génie Logiciel et Base de Données",
+      "Concepteur d'Applications Web Modernes"
+    ],
+    "description": "Je conçois et développe des applications web modernes, performantes et évolutives, en combinant un design élégant, une expérience utilisateur fluide et une architecture robuste.",
+    "btnProject": "Voir mes projets",
+    "btnDownload": "Télécharger CV"
+  },
+  "about": {
+    "title1": "À propos de",
+    "title2": "moi",
+    "description": "Développeur passionné par la création d'applications web modernes, performantes et scalables. Mon approche combine une forte base en ingénierie logicielle avec un sens aigu du détail visuel, afin d'offrir la meilleure expérience utilisateur possible.",
+    "items": {
+      "problemSolving": {
+        "title": "Résolution de problèmes",
+        "desc": "J'aime relever des défis complexes et concevoir des architectures élégantes pour y répondre de manière optimale."
+      },
+      "creativity": {
+        "title": "Créativité",
+        "desc": "Chaque ligne de code est une opportunité de créer une expérience interactive unique, moderne et impactante."
+      },
+      "passion": {
+        "title": "Passion du développement",
+        "desc": "Le développement n'est pas seulement un métier pour moi, c'est une véritable passion exercée au quotidien avec rigueur."
+      },
+      "learning": {
+        "title": "Apprentissage continu",
+        "desc": "Le web évolue vite. Je me forme en continu pour toujours tirer parti des dernières innovations de la stack moderne."
+      }
+    }
+  },
+  "skills": {
+    "title1": "Mon",
+    "title2": "Arsenal Technique",
+    "desc": "Une maîtrise complète d'un large éventail de technologies pour construire des solutions numériques de bout en bout.",
+    "categories": {
+      "frontend": "Développement Front-end",
+      "backend": "Développement Back-end",
+      "languages": "Langages de programmation",
+      "databases": "Bases de données",
+      "tools": "Versionnement & Déploiement",
+      "ide": "Environnements de développement",
+      "os": "Système d'exploitation"
+    }
+  },
+  "projects": {
+    "subtitle": "Portfolio",
+    "title1": "Mes Derniers",
+    "title2": "Projets",
+    "items": {
+      "p1": {
+        "cat": "Application Fullstack",
+        "title": "Système de gestion centralisée des personnels de l'Etat",
+        "desc": "Conception et réalisation d'une application web pour la gestion centralisée des personnels de l'Etat. (Projet de stage)"
+      },
+      "p2": {
+        "cat": "Application Fullstack",
+        "title": "Application de gestion de commandes de restaurant",
+        "desc": "Développement d'une application permettant la gestion des commandes de nourriture et le suivi des opérations du restaurant."
+      },
+      "p3": {
+        "cat": "Application Fullstack",
+        "title": "Application de gestion de stock produits",
+        "desc": "Création d'une application permettant l'ajout de produits, l'affichage de la liste et la visualisation d'un bilan (valeurs min., max., total) sous forme de graphique circulaire."
+      },
+      "p4": {
+        "cat": "Application Fullstack",
+        "title": "Application de gestion de station-service",
+        "desc": "Développement d'un système de gestion de carburants, services clients et entretiens. Fonctions clés: opérations CRUD, recherche de clients, génération de reçus PDF, alertes de stock bas et statistiques (recettes, fréquentation)."
+      }
+    },
+    "btnMore": "Voir plus sur GitHub"
+  },
+  "services": {
+    "subtitle": "Services",
+    "title1": "Ce que je peux",
+    "title2": "faire pour vous",
+    "items": {
+      "s1": {
+        "title": "Développement Web Fullstack",
+        "desc": "Création d'applications web complètes, de l'interface utilisateur à l'architecture de la base de données, avec les frameworks modernes."
+      },
+      "s2": {
+        "title": "Création API REST",
+        "desc": "Conception et développement d'APIs robustes, sécurisées et documentées pour alimenter vos applications."
+      },
+      "s3": {
+        "title": "Développement Front-end React / Next.js",
+        "desc": "Intégration d'interfaces utilisateur dynamiques, réactives et optimisées pour le SEO avec la puissance de Next.js."
+      },
+      "s4": {
+        "title": "Développement Back-end Node.js / Laravel",
+        "desc": "Développement d'architectures serveur backend scalables, sécurisées et capables de gérer des flux de données importants."
+      },
+      "s5": {
+        "title": "Intégration UI/UX moderne",
+        "desc": "Traduction minutieuse de maquettes en code parfait, avec intégration d'animations fluides et du glassmorphism."
+      },
+      "s6": {
+        "title": "Optimisation Performance",
+        "desc": "Audit et optimisation du code existant, du temps de chargement, du SEO technique et de l'accessibilité."
+      }
+    }
+  },
+  "experience": {
+    "title1": "Mon Parcours &",
+    "title2": "Expérience",
+    "items": {
+      "e1": {
+        "title": "Ecole Nationale d'Informatique (ENI)",
+        "company": "Université de Fianarantsoa, Madagascar",
+        "period": "2026 - Présent",
+        "desc": "Troisième année de Licence Professionnelle en Génie logiciel et Base de Données"
+      },
+      "e2": {
+        "title": "Stage en Entreprise",
+        "company": "Ministère de l'Economie et des Finances (MEF) - Direction Générale du Contrôle Financier (DGCF)",
+        "period": "2025 (Sept. - Nov.)",
+        "desc": "Conception et réalisation d'une application web pour la gestion centralisée des personnels de l'Etat."
+      },
+      "e3": {
+        "title": "Ecole Nationale d'Informatique (ENI)",
+        "company": "Université de Fianarantsoa, Madagascar",
+        "period": "2025",
+        "desc": "Deuxième année de Licence Professionnelle en Génie logiciel et Base de Données"
+      },
+      "e4": {
+        "title": "Ecole Nationale d'Informatique (ENI)",
+        "company": "Université de Fianarantsoa, Madagascar",
+        "period": "2024",
+        "desc": "Première année de Licence Professionnelle en Informatique"
+      },
+      "e5": {
+        "title": "Baccalauréat",
+        "company": "Lycée Sainte Famille Anosivavaka (LSFA)",
+        "period": "2023",
+        "desc": "Obtention du diplôme de Baccalauréat Série D (Mention Bien)"
+      }
+    }
+  },
+  "contact": {
+    "title1": "Discutons de votre",
+    "title2": "Projet",
+    "desc": "Vous avez une idée de projet, un besoin technique ou vous souhaitez simplement échanger ? N'hésitez pas à me contacter.",
+    "info": {
+      "title": "Informations de contact",
+      "phone": "Téléphone",
+      "email": "Email",
+      "location": "Localisation",
+      "locationVal": "Antananarivo, Madagascar",
+      "portfolio": "Portfolio",
+      "socials": "Réseaux Sociaux"
+    },
+    "form": {
+      "nameLabel": "Nom complet",
+      "namePlaceholder": "Votre nom complet",
+      "nameReq": "Le nom est requis",
+      "emailLabel": "Adresse Email",
+      "emailPlaceholder": "Votre email",
+      "emailReq": "L'email est requis",
+      "emailInv": "Email invalide",
+      "subjectLabel": "Sujet",
+      "subjectPlaceholder": "Votre sujet",
+      "subjectReq": "Le sujet est requis",
+      "msgLabel": "Message",
+      "msgPlaceholder": "Votre message",
+      "msgReq": "Le message est requis",
+      "btnSending": "Envoi en cours...",
+      "btnSend": "Envoyer le message",
+      "success": "✅ Votre message a été envoyé avec succès ! Je vous répondrai dans les plus brefs délais.",
+      "error": "❌ Une erreur est survenue. Veuillez réessayer ou me contacter directement par email."
+    }
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "design": "Design & Code avec ❤️ par Miaritsiory",
+    "ariaTop": "Retour en haut"
+  }
+}

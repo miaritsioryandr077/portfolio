@@ -1,0 +1,193 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "services": "Services",
+    "experience": "Experience",
+    "contact": "Contact",
+    "contactMe": "Contact Me"
+  },
+  "hero": {
+    "badge": "Available for new opportunities",
+    "titles": [
+      "Full-Stack Web Developer",
+      "Software Engineering & Database Student",
+      "Modern Web Applications Designer"
+    ],
+    "description": "I design and develop modern, high-performance, and scalable web applications, combining elegant design, seamless user experience, and robust architecture.",
+    "btnProject": "View my projects",
+    "btnDownload": "Download Resume"
+  },
+  "about": {
+    "title1": "About",
+    "title2": "me",
+    "description": "A developer passionate about creating modern, high-performance, and scalable web applications. My approach combines a strong foundation in software engineering with a keen eye for visual detail to provide the best possible user experience.",
+    "items": {
+      "problemSolving": {
+        "title": "Problem Solving",
+        "desc": "I enjoy tackling complex challenges and designing elegant architectures to solve them optimally."
+      },
+      "creativity": {
+        "title": "Creativity",
+        "desc": "Every line of code is an opportunity to create a unique, modern, and impactful interactive experience."
+      },
+      "passion": {
+        "title": "Passion for Development",
+        "desc": "Development isn't just a job for me; it's a true passion practiced daily with rigor."
+      },
+      "learning": {
+        "title": "Continuous Learning",
+        "desc": "The web evolves fast. I continuously train myself to always leverage the latest innovations in modern stacks."
+      }
+    }
+  },
+  "skills": {
+    "title1": "My",
+    "title2": "Technical Arsenal",
+    "desc": "A complete mastery of a wide range of technologies to build end-to-end digital solutions.",
+    "categories": {
+      "frontend": "Front-end Development",
+      "backend": "Back-end Development",
+      "languages": "Programming Languages",
+      "databases": "Databases",
+      "tools": "Versioning & Deployment",
+      "ide": "Development Environments",
+      "os": "Operating Systems"
+    }
+  },
+  "projects": {
+    "subtitle": "Portfolio",
+    "title1": "My Latest",
+    "title2": "Projects",
+    "items": {
+      "p1": {
+        "cat": "Fullstack Application",
+        "title": "Centralized State Personnel Management System",
+        "desc": "Design and development of a web application for the centralized management of State personnel. (Internship project)"
+      },
+      "p2": {
+        "cat": "Fullstack Application",
+        "title": "Restaurant Order Management Application",
+        "desc": "Development of an application allowing food order management and restaurant operations tracking."
+      },
+      "p3": {
+        "cat": "Fullstack Application",
+        "title": "Product Inventory Management Application",
+        "desc": "Creation of an application allowing product additions, list display, and visualization of a summary (min, max, total values) via a pie chart."
+      },
+      "p4": {
+        "cat": "Fullstack Application",
+        "title": "Gas Station Management Application",
+        "desc": "Development of a fuel, customer service, and maintenance management system. Key features: CRUD operations, customer search, PDF receipt generation, low stock alerts, and statistics."
+      }
+    },
+    "btnMore": "See more on GitHub"
+  },
+  "services": {
+    "subtitle": "Services",
+    "title1": "What I can",
+    "title2": "do for you",
+    "items": {
+      "s1": {
+        "title": "Fullstack Web Development",
+        "desc": "Creation of complete web applications, from user interface to database architecture, using modern frameworks."
+      },
+      "s2": {
+        "title": "REST API Creation",
+        "desc": "Design and development of robust, secure, and documented APIs to power your applications."
+      },
+      "s3": {
+        "title": "React / Next.js Front-end Development",
+        "desc": "Integration of dynamic, responsive, and SEO-optimized user interfaces with the power of Next.js."
+      },
+      "s4": {
+        "title": "Node.js / Laravel Back-end Development",
+        "desc": "Development of scalable, secure backend server architectures capable of handling large data flows."
+      },
+      "s5": {
+        "title": "Modern UI/UX Integration",
+        "desc": "Meticulous translation of mockups into pixel-perfect code, with fluid animations and glassmorphism."
+      },
+      "s6": {
+        "title": "Performance Optimization",
+        "desc": "Auditing and optimizing existing code, load times, technical SEO, and accessibility."
+      }
+    }
+  },
+  "experience": {
+    "title1": "My Journey &",
+    "title2": "Experience",
+    "items": {
+      "e1": {
+        "title": "National School of Computer Science (ENI)",
+        "company": "University of Fianarantsoa, Madagascar",
+        "period": "2026 - Present",
+        "desc": "Third year of Professional Bachelor's Degree in Software Engineering and Database"
+      },
+      "e2": {
+        "title": "Corporate Internship",
+        "company": "Ministry of Economy and Finance (MEF) - General Directorate of Financial Control (DGCF)",
+        "period": "2025 (Sept. - Nov.)",
+        "desc": "Design and development of a web application for the centralized management of State personnel."
+      },
+      "e3": {
+        "title": "National School of Computer Science (ENI)",
+        "company": "University of Fianarantsoa, Madagascar",
+        "period": "2025",
+        "desc": "Second year of Professional Bachelor's Degree in Software Engineering and Database"
+      },
+      "e4": {
+        "title": "National School of Computer Science (ENI)",
+        "company": "University of Fianarantsoa, Madagascar",
+        "period": "2024",
+        "desc": "First year of Professional Bachelor's Degree in Computer Science"
+      },
+      "e5": {
+        "title": "High School Diploma",
+        "company": "Sainte Famille Anosivavaka High School (LSFA)",
+        "period": "2023",
+        "desc": "Obtained High School Diploma Series D (With Honors)"
+      }
+    }
+  },
+  "contact": {
+    "title1": "Let's discuss your",
+    "title2": "Project",
+    "desc": "Do you have a project idea, a technical need, or just want to chat? Feel free to contact me.",
+    "info": {
+      "title": "Contact Information",
+      "phone": "Phone",
+      "email": "Email",
+      "location": "Location",
+      "locationVal": "Antananarivo, Madagascar",
+      "portfolio": "Portfolio",
+      "socials": "Social Networks"
+    },
+    "form": {
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Your full name",
+      "nameReq": "Name is required",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "Your email",
+      "emailReq": "Email is required",
+      "emailInv": "Invalid email",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "Your subject",
+      "subjectReq": "Subject is required",
+      "msgLabel": "Message",
+      "msgPlaceholder": "Your message",
+      "msgReq": "Message is required",
+      "btnSending": "Sending...",
+      "btnSend": "Send message",
+      "success": "✅ Your message has been sent successfully! I will reply to you as soon as possible.",
+      "error": "❌ An error occurred. Please try again or contact me directly by email."
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "design": "Design & Code with ❤️ by Miaritsiory",
+    "ariaTop": "Back to top"
+  }
+}

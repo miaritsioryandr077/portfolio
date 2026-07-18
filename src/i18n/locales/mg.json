@@ -1,0 +1,193 @@
+{
+  "nav": {
+    "home": "Fandraisana",
+    "about": "Mombamomba",
+    "skills": "Fahaizana",
+    "projects": "Tetika",
+    "services": "Tolotra",
+    "experience": "Traikefa",
+    "contact": "Fifandraisana",
+    "contactMe": "Hifandray amiko"
+  },
+  "hero": {
+    "badge": "Vonona hiasa amin'ny tolotra vaovao",
+    "titles": [
+      "Mpamolavola Tranonkala Full-Stack",
+      "Mpianatra momba ny Rindrambaiko sy Tahirin-kevitra",
+      "Mpamorona Tranonkala Maoderina"
+    ],
+    "description": "Mamorona sy mampivelatra tranonkala maoderina, haingana, ary mora itarina aho, mampifandray endrika kanto, fampiasana mirindra, ary rafitra mafy orina.",
+    "btnProject": "Hijery ny tetikasa",
+    "btnDownload": "Haka CV"
+  },
+  "about": {
+    "title1": "Mombamomba",
+    "title2": "ahy",
+    "description": "Mpamolavola manana fitiavana amin'ny famoronana tranonkala maoderina sy matanjaka. Ny fomba fiasako dia mampifandray fahaizana ara-teknika sy ny fahaiza-mijery ny endrika bika, hanomezana ny traikefa tsara indrindra ho an'ny mpampiasa.",
+    "items": {
+      "problemSolving": {
+        "title": "Famahana olana",
+        "desc": "Tiako ny mamaha olana sarotra sy mamolavola rafitra kanto mba hamaliana izany amin'ny fomba tsara indrindra."
+      },
+      "creativity": {
+        "title": "Famoronana",
+        "desc": "Ny andalana kaody tsirairay dia fanararaotana hamorona zotram-pifandraisana miavaka, maoderina ary mampiaiky volana."
+      },
+      "passion": {
+        "title": "Fitiavana fikirakirana",
+        "desc": "Tsy asa fotsiny ho ahy ny fampivelarana rindrambaiko, fa tena fitiavana tanterahina isan'andro amim-pahamatorana."
+      },
+      "learning": {
+        "title": "Fianarana tsy mipetraka",
+        "desc": "Mivoatra haingana ny tontolon'ny tranonkala. Miofana tsy tapaka aho mba hanararaotra ireo fivoarana farany indrindra."
+      }
+    }
+  },
+  "skills": {
+    "title1": "Ireo hery",
+    "title2": "Arak'asa",
+    "desc": "Mahafehy tanteraka teknolojia isan-karazany amin'ny famoronana vahaolana ara-kajy mirindra hatrany am-piandohana ka hatramin'ny farany.",
+    "categories": {
+      "frontend": "Famolavolana Front-end",
+      "backend": "Famolavolana Back-end",
+      "languages": "Fiteny Fandrindrana",
+      "databases": "Tahirin-kevitra (Databases)",
+      "tools": "Fitantanana & Fampiharana",
+      "ide": "Tontolon'ny Fandrindrana (IDE)",
+      "os": "Rafitra Fibaikana (OS)"
+    }
+  },
+  "projects": {
+    "subtitle": "Portfolio",
+    "title1": "Ireo tetikasa",
+    "title2": "Farany",
+    "items": {
+      "p1": {
+        "cat": "Fampiharana Fullstack",
+        "title": "Rafitra fitantanana foibe ho an'ny mpiasam-panjakana",
+        "desc": "Famoronana sy fanatanterahana fampiharana tranonkala hitantanana ireo mpiasam-panjakana. (Tetikasa fanaovana stage)"
+      },
+      "p2": {
+        "cat": "Fampiharana Fullstack",
+        "title": "Fampiharana fitantanana komandin'ny trano fisakafoanana",
+        "desc": "Fampivelarana fampiharana ahafahana mitantana ny komandin-tsakafo sy manara-maso ny asan'ny trano fisakafoanana."
+      },
+      "p3": {
+        "cat": "Fampiharana Fullstack",
+        "title": "Fampiharana fitantanana ny tahiry",
+        "desc": "Famoronana fampiharana hahafahana manampy vokatry, mijery lisitra, ary mijery tatitra an-tsary amin'ny endrika boribory."
+      },
+      "p4": {
+        "cat": "Fampiharana Fullstack",
+        "title": "Fampiharana fitantanana tobin-dasantsy",
+        "desc": "Fampivelarana rafitra fitantanana solika sy mpanjifa. Asa fototra: fikirakirana CRUD, fikarohana mpanjifa, famoronana faktiora PDF, sy ny antontan'isa."
+      }
+    },
+    "btnMore": "Hijery misimisy kokoa ao amin'ny GitHub"
+  },
+  "services": {
+    "subtitle": "Tolotra",
+    "title1": "Ireo asa azoko",
+    "title2": "atao ho anao",
+    "items": {
+      "s1": {
+        "title": "Fampivelarana Tranonkala Fullstack",
+        "desc": "Famoronana tranonkala feno, manomboka amin'ny bika aman'endriny hatramin'ny rafitry ny tahirin-kevitra, amin'ny alalan'ny teknolojia maoderina."
+      },
+      "s2": {
+        "title": "Famoronana API REST",
+        "desc": "Famolavolana API mafy orina, azo antoka ary voarakitra mba hampandeha ny rindrambaikonao."
+      },
+      "s3": {
+        "title": "Fampivelarana Front-end React / Next.js",
+        "desc": "Famoronana bika aman'endrika mavitrika sy miasa tsara miaraka amin'ny herin'ny Next.js."
+      },
+      "s4": {
+        "title": "Fampivelarana Back-end Node.js / Laravel",
+        "desc": "Famokarana rafitra serivera azo ifikirana, hisolo vaika mandray angon-drakitra be."
+      },
+      "s5": {
+        "title": "Fampidirana UI/UX maoderina",
+        "desc": "Famadihana amim-pitandremana ny sary kaody tena izy, misy animation mirindra sy glassmorphism."
+      },
+      "s6": {
+        "title": "Fanatsarana ny fampandehanana",
+        "desc": "Fanadihadiana sy fanamaivanan-kaody efa misy, fitsirihana SEO teknika ary fanamarihana fidirana."
+      }
+    }
+  },
+  "experience": {
+    "title1": "Ny Lalam-piainako &",
+    "title2": "Traikefa",
+    "items": {
+      "e1": {
+        "title": "Ecole Nationale d'Informatique (ENI)",
+        "company": "Oniversiten'i Fianarantsoa, Madagasikara",
+        "period": "2026 - Ankehitriny",
+        "desc": "Taona fahatelo amin'ny Licence Professionnelle, lalam-piofanana Génie logiciel et Base de Données"
+      },
+      "e2": {
+        "title": "Stage any an-toeram-piasana",
+        "company": "Ministeran'ny Toekarena sy ny Fitantanam-bola (MEF) - Fitaleavana Jeneralin'ny Fanaraha-maso (DGCF)",
+        "period": "2025 (Sept. - Nôv.)",
+        "desc": "Famoronana sy fanatanterahana fampiharana tranonkala ho an'ny fitantanana ny mpiasam-panjakana."
+      },
+      "e3": {
+        "title": "Ecole Nationale d'Informatique (ENI)",
+        "company": "Oniversiten'i Fianarantsoa, Madagasikara",
+        "period": "2025",
+        "desc": "Taona faharoa amin'ny Licence Professionnelle, lalam-piofanana Génie logiciel et Base de Données"
+      },
+      "e4": {
+        "title": "Ecole Nationale d'Informatique (ENI)",
+        "company": "Oniversiten'i Fianarantsoa, Madagasikara",
+        "period": "2024",
+        "desc": "Taona voalohany amin'ny Licence Professionnelle Informatique"
+      },
+      "e5": {
+        "title": "Baccalauréat",
+        "company": "Lycée Sainte Famille Anosivavaka (LSFA)",
+        "period": "2023",
+        "desc": "Nahazo ny diplaoma Baccalauréat Sokajy D (Mention Bien)"
+      }
+    }
+  },
+  "contact": {
+    "title1": "Andao hiresaka momba ny",
+    "title2": "Tetikasa",
+    "desc": "Manana hevitra tetikasa ve ianao, mila fanampiana ara-teknika sa te hiresaka fotsiny? Aza misalasala mifandray amiko.",
+    "info": {
+      "title": "Andinindininy fifandraisana",
+      "phone": "Telefaonina",
+      "email": "Imailaka",
+      "location": "Toerana misy",
+      "locationVal": "Antananarivo, Madagasikara",
+      "portfolio": "Portfolio",
+      "socials": "Tambajotra sosialy"
+    },
+    "form": {
+      "nameLabel": "Anarana feno",
+      "namePlaceholder": "Ny anaranao feno",
+      "nameReq": "Tsy maintsy fenoina ny anarana",
+      "emailLabel": "Adiresy imailaka",
+      "emailPlaceholder": "Ny imailakao",
+      "emailReq": "Tsy maintsy fenoina ny imailaka",
+      "emailInv": "Tsy mety ny imailaka",
+      "subjectLabel": "Lohahevitra",
+      "subjectPlaceholder": "Ny lohahevitrao",
+      "subjectReq": "Tsy maintsy fenoina ny lohahevitra",
+      "msgLabel": "Hafatra",
+      "msgPlaceholder": "Ny hafatrao",
+      "msgReq": "Tsy maintsy fenoina ny hafatra",
+      "btnSending": "Mandeha...",
+      "btnSend": "Handefa ny hafatra",
+      "success": "✅ Voaray soa aman-tsara ny hafatrao ! Hamaly anao aho haingana araka izay tratra.",
+      "error": "❌ Nisy olana nitranga. Miangavy anao hanandrana indray na hifandray mivantana amiko."
+    }
+  },
+  "footer": {
+    "rights": "Zo rehetra voatokana.",
+    "design": "Design & Kaody namboarin'i Miaritsiory am-pitiavana ❤️",
+    "ariaTop": "Hiverina any ambony"
+  }
+}

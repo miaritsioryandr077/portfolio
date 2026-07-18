@@ -1,0 +1,193 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "services": "Servicios",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "contactMe": "Contáctame"
+  },
+  "hero": {
+    "badge": "Disponible para nuevas oportunidades",
+    "titles": [
+      "Desarrollador Web Full-Stack",
+      "Estudiante de Ingeniería de Software y Bases de Datos",
+      "Diseñador de Aplicaciones Web Modernas"
+    ],
+    "description": "Diseño y desarrollo aplicaciones web modernas, de alto rendimiento y escalables, combinando un diseño elegante, una experiencia de usuario perfecta y una arquitectura robusta.",
+    "btnProject": "Ver mis proyectos",
+    "btnDownload": "Descargar CV"
+  },
+  "about": {
+    "title1": "Sobre",
+    "title2": "mí",
+    "description": "Un desarrollador apasionado por crear aplicaciones web modernas, de alto rendimiento y escalables. Mi enfoque combina una sólida base en ingeniería de software con un ojo agudo para el detalle visual para brindar la mejor experiencia de usuario posible.",
+    "items": {
+      "problemSolving": {
+        "title": "Resolución de problemas",
+        "desc": "Disfruto afrontando retos complejos y diseñando arquitecturas elegantes para resolverlos de forma óptima."
+      },
+      "creativity": {
+        "title": "Creatividad",
+        "desc": "Cada línea de código es una oportunidad para crear una experiencia interactiva única, moderna e impactante."
+      },
+      "passion": {
+        "title": "Pasión por el Desarrollo",
+        "desc": "El desarrollo no es solo un trabajo para mí; es una verdadera pasión que practico a diario con rigor."
+      },
+      "learning": {
+        "title": "Aprendizaje continuo",
+        "desc": "La web evoluciona rápido. Me formo continuamente para aprovechar siempre las últimas innovaciones tecnológicas."
+      }
+    }
+  },
+  "skills": {
+    "title1": "Mi",
+    "title2": "Arsenal Técnico",
+    "desc": "Un dominio completo de una amplia gama de tecnologías para construir soluciones digitales de principio a fin.",
+    "categories": {
+      "frontend": "Desarrollo Front-end",
+      "backend": "Desarrollo Back-end",
+      "languages": "Lenguajes de Programación",
+      "databases": "Bases de Datos",
+      "tools": "Manejo de Versiones y Despliegue",
+      "ide": "Entornos de Desarrollo",
+      "os": "Sistemas Operativos"
+    }
+  },
+  "projects": {
+    "subtitle": "Portafolio",
+    "title1": "Mis Últimos",
+    "title2": "Proyectos",
+    "items": {
+      "p1": {
+        "cat": "Aplicación Fullstack",
+        "title": "Sistema Centralizado de Gestión del Personal del Estado",
+        "desc": "Diseño y desarrollo de una aplicación web para la gestión centralizada del personal del Estado. (Proyecto de prácticas)"
+      },
+      "p2": {
+        "cat": "Aplicación Fullstack",
+        "title": "Aplicación de Gestión de Pedidos de Restaurante",
+        "desc": "Desarrollo de una aplicación que permite la gestión de pedidos de comida y el seguimiento de las operaciones del restaurante."
+      },
+      "p3": {
+        "cat": "Aplicación Fullstack",
+        "title": "Aplicación de Gestión de Inventario de Productos",
+        "desc": "Creación de una aplicación que permite agregar productos, mostrar listas y visualizar un resumen (valores mín., máx., totales) a través de un gráfico circular."
+      },
+      "p4": {
+        "cat": "Aplicación Fullstack",
+        "title": "Aplicación de Gestión de Estaciones de Servicio",
+        "desc": "Desarrollo de un sistema de gestión de combustible, atención al cliente y mantenimiento. Características clave: operaciones CRUD, alertas de stock bajo y estadísticas."
+      }
+    },
+    "btnMore": "Ver más en GitHub"
+  },
+  "services": {
+    "subtitle": "Servicios",
+    "title1": "Lo que puedo",
+    "title2": "hacer por ti",
+    "items": {
+      "s1": {
+        "title": "Desarrollo Web Fullstack",
+        "desc": "Creación de aplicaciones web completas, desde la interfaz de usuario hasta la base de datos, con frameworks modernos."
+      },
+      "s2": {
+        "title": "Creación de API REST",
+        "desc": "Diseño y desarrollo de APIs robustas, seguras y documentadas para potenciar sus aplicaciones."
+      },
+      "s3": {
+        "title": "Desarrollo Front-end React / Next.js",
+        "desc": "Integración de interfaces de usuario dinámicas, responsivas y optimizadas para SEO con el poder de Next.js."
+      },
+      "s4": {
+        "title": "Desarrollo Back-end Node.js / Laravel",
+        "desc": "Desarrollo de arquitecturas de servidores en el backend escalables y seguras, capaces de manejar grandes flujos de datos."
+      },
+      "s5": {
+        "title": "Integración Moderna de UI/UX",
+        "desc": "Traducción meticulosa de maquetas en código perfecto, con animaciones fluidas y 'glassmorfismo'."
+      },
+      "s6": {
+        "title": "Optimización del Rendimiento",
+        "desc": "Auditoría y optimización del código existente, tiempos de carga, SEO técnico y accesibilidad."
+      }
+    }
+  },
+  "experience": {
+    "title1": "Mi Trayectoria &",
+    "title2": "Experiencia",
+    "items": {
+      "e1": {
+        "title": "Escuela Nacional de Informática (ENI)",
+        "company": "Universidad de Fianarantsoa, Madagascar",
+        "period": "2026 - Presente",
+        "desc": "Tercer año de la Licenciatura Profesional en Ingeniería de Software y Bases de Datos"
+      },
+      "e2": {
+        "title": "Prácticas Empresariales",
+        "company": "Ministerio de Economía y Finanzas (MEF) - Dirección General de Control Financiero (DGCF)",
+        "period": "2025 (Sept. - Nov.)",
+        "desc": "Diseño y desarrollo de una aplicación web para la gestión centralizada del personal del Estado."
+      },
+      "e3": {
+        "title": "Escuela Nacional de Informática (ENI)",
+        "company": "Universidad de Fianarantsoa, Madagascar",
+        "period": "2025",
+        "desc": "Segundo año de la Licenciatura Profesional en Ingeniería de Software y Bases de Datos"
+      },
+      "e4": {
+        "title": "Escuela Nacional de Informática (ENI)",
+        "company": "Universidad de Fianarantsoa, Madagascar",
+        "period": "2024",
+        "desc": "Primer año de la Licenciatura Profesional en Informática"
+      },
+      "e5": {
+        "title": "Bachillerato",
+        "company": "Escuela Secundaria Sainte Famille Anosivavaka (LSFA)",
+        "period": "2023",
+        "desc": "Obtención del Bachillerato Serie D (Con Honores)"
+      }
+    }
+  },
+  "contact": {
+    "title1": "Hablemos de su",
+    "title2": "Proyecto",
+    "desc": "¿Tiene una idea de proyecto, una necesidad técnica o simplemente quiere conversar? No dude en contactarme.",
+    "info": {
+      "title": "Información de contacto",
+      "phone": "Teléfono",
+      "email": "Correo Electrónico",
+      "location": "Ubicación",
+      "locationVal": "Antananarivo, Madagascar",
+      "portfolio": "Portafolio",
+      "socials": "Redes Sociales"
+    },
+    "form": {
+      "nameLabel": "Nombre completo",
+      "namePlaceholder": "Su nombre completo",
+      "nameReq": "Se requiere nombre",
+      "emailLabel": "Dirección de Correo",
+      "emailPlaceholder": "Su correo",
+      "emailReq": "Se requiere correo electrónico",
+      "emailInv": "Correo electrónico inválido",
+      "subjectLabel": "Asunto",
+      "subjectPlaceholder": "Su asunto",
+      "subjectReq": "Se requiere asunto",
+      "msgLabel": "Mensaje",
+      "msgPlaceholder": "Su mensaje",
+      "msgReq": "Se requiere mensaje",
+      "btnSending": "Enviando...",
+      "btnSend": "Enviar mensaje",
+      "success": "✅ ¡Su mensaje ha sido enviado con éxito! Le responderé lo más pronto posible.",
+      "error": "❌ Ocurrió un error. Por favor inténtelo de nuevo o contácteme directamente por correo electrónico."
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "design": "Diseño y Código con ❤️ por Miaritsiory",
+    "ariaTop": "Volver arriba"
+  }
+}

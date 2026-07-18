@@ -15,6 +15,7 @@ import {
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
+import { useLanguage } from "@/context/LanguageContext";
 
 type FormData = {
   name: string;
@@ -24,6 +25,7 @@ type FormData = {
 };
 
 export default function Contact() {
+  const { t } = useLanguage();
   const [isSending, setIsSending] = useState(false);
   const [sendStatus, setSendStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({
     type: null,
@@ -58,7 +60,7 @@ export default function Contact() {
       if (response.status === 200) {
         setSendStatus({
           type: 'success',
-          message: '✅ Votre message a été envoyé avec succès ! Je vous répondrai dans les plus brefs délais.'
+          message: t("contact.form.success")
         });
         reset();
         
@@ -70,7 +72,7 @@ export default function Contact() {
       console.error('Erreur EmailJS:', error);
       setSendStatus({
         type: 'error',
-        message: '❌ Une erreur est survenue. Veuillez réessayer ou me contacter directement par email.'
+        message: t("contact.form.error")
       });
     } finally {
       setIsSending(false);
@@ -123,11 +125,10 @@ export default function Contact() {
           className="text-center mb-10 sm:mb-12 md:mb-16"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-space font-bold mb-4 sm:mb-6">
-            Discutons de votre <span className="text-gradient">Projet</span>
+            {t("contact.title1")} <span className="text-gradient">{t("contact.title2")}</span>
           </h2>
           <p className="text-foreground/70 max-w-2xl mx-auto text-sm sm:text-base md:text-lg px-4 sm:px-0">
-            Vous avez une idée de projet, un besoin technique ou vous souhaitez simplement échanger ? 
-            N'hésitez pas à me contacter.
+            {t("contact.desc")}
           </p>
         </motion.div>
 
@@ -142,7 +143,7 @@ export default function Contact() {
           >
             <div className="glass p-6 sm:p-8 rounded-2xl">
               <h3 className="text-xl sm:text-2xl font-bold font-space text-white mb-4 sm:mb-6">
-                Informations de contact
+                {t("contact.info.title")}
               </h3>
 
               <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
@@ -152,7 +153,7 @@ export default function Contact() {
                     <Phone size={18} className="text-primary" />
                   </div>
                   <div>
-                    <p className="text-xs sm:text-sm text-foreground/50 mb-1">Téléphone</p>
+                    <p className="text-xs sm:text-sm text-foreground/50 mb-1">{t("contact.info.phone")}</p>
                     <a
                       href="tel:+261335110053"
                       className="text-white hover:text-primary transition-colors text-sm sm:text-base"
@@ -168,7 +169,7 @@ export default function Contact() {
                     <Mail size={18} className="text-primary" />
                   </div>
                   <div>
-                    <p className="text-xs sm:text-sm text-foreground/50 mb-1">Email</p>
+                    <p className="text-xs sm:text-sm text-foreground/50 mb-1">{t("contact.info.email")}</p>
                     <a
                       href="https://mail.google.com/mail/?view=cm&fs=1&to=miaritsioryandriambololona@gmail.com"
                       target="_blank"
@@ -187,9 +188,9 @@ export default function Contact() {
                     <MapPin size={18} className="text-primary" />
                   </div>
                   <div>
-                    <p className="text-xs sm:text-sm text-foreground/50 mb-1">Localisation</p>
+                    <p className="text-xs sm:text-sm text-foreground/50 mb-1">{t("contact.info.location")}</p>
                     <p className="text-white text-sm sm:text-base">
-                      Antananarivo, Madagascar
+                      {t("contact.info.locationVal")}
                     </p>
                   </div>
                 </div>
@@ -200,7 +201,7 @@ export default function Contact() {
                     <Globe size={18} className="text-primary" />
                   </div>
                   <div>
-                    <p className="text-xs sm:text-sm text-foreground/50 mb-1">Portfolio</p>
+                    <p className="text-xs sm:text-sm text-foreground/50 mb-1">{t("contact.info.portfolio")}</p>
                     <a
                       href="https://miaritsiorydev.vercel.app"
                       target="_blank"
@@ -214,7 +215,7 @@ export default function Contact() {
               </div>
 
               <h4 className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-foreground/50 mb-3 sm:mb-4">
-                Réseaux Sociaux
+                {t("contact.info.socials")}
               </h4>
 
               <div className="flex flex-wrap gap-2 sm:gap-3">
@@ -247,12 +248,12 @@ export default function Contact() {
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
                 <div>
-                  <label className="block text-xs sm:text-sm font-medium text-foreground/70 mb-1 sm:mb-2">Nom complet</label>
+                  <label className="block text-xs sm:text-sm font-medium text-foreground/70 mb-1 sm:mb-2">{t("contact.form.nameLabel")}</label>
                   <input
                     type="text"
-                    {...register("name", { required: "Le nom est requis" })}
+                    {...register("name", { required: t("contact.form.nameReq") })}
                     className={`w-full bg-black/40 border ${errors.name ? 'border-red-500/50' : 'border-white/10'} rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-white text-sm sm:text-base focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-300`}
-                    placeholder="Votre nom complet"
+                    placeholder={t("contact.form.namePlaceholder")}
                   />
                   {errors.name && (
                     <motion.span 
@@ -265,18 +266,18 @@ export default function Contact() {
                   )}
                 </div>
                 <div>
-                  <label className="block text-xs sm:text-sm font-medium text-foreground/70 mb-1 sm:mb-2">Adresse Email</label>
+                  <label className="block text-xs sm:text-sm font-medium text-foreground/70 mb-1 sm:mb-2">{t("contact.form.emailLabel")}</label>
                   <input
                     type="email"
                     {...register("email", { 
-                      required: "L'email est requis", 
+                      required: t("contact.form.emailReq"), 
                       pattern: {
                         value: /^\S+@\S+$/i,
-                        message: "Email invalide"
+                        message: t("contact.form.emailInv")
                       }
                     })}
                     className={`w-full bg-black/40 border ${errors.email ? 'border-red-500/50' : 'border-white/10'} rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-white text-sm sm:text-base focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-300`}
-                    placeholder="Votre email"
+                    placeholder={t("contact.form.emailPlaceholder")}
                   />
                   {errors.email && (
                     <motion.span 
@@ -291,12 +292,12 @@ export default function Contact() {
               </div>
 
               <div className="mb-4 sm:mb-6">
-                <label className="block text-xs sm:text-sm font-medium text-foreground/70 mb-1 sm:mb-2">Sujet</label>
+                <label className="block text-xs sm:text-sm font-medium text-foreground/70 mb-1 sm:mb-2">{t("contact.form.subjectLabel")}</label>
                 <input
                   type="text"
-                  {...register("subject", { required: "Le sujet est requis" })}
+                  {...register("subject", { required: t("contact.form.subjectReq") })}
                   className={`w-full bg-black/40 border ${errors.subject ? 'border-red-500/50' : 'border-white/10'} rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-white text-sm sm:text-base focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-300`}
-                  placeholder="Votre sujet"
+                  placeholder={t("contact.form.subjectPlaceholder")}
                 />
                 {errors.subject && (
                   <motion.span 
@@ -310,12 +311,12 @@ export default function Contact() {
               </div>
 
               <div className="mb-4 sm:mb-6">
-                <label className="block text-xs sm:text-sm font-medium text-foreground/70 mb-1 sm:mb-2">Message</label>
+                <label className="block text-xs sm:text-sm font-medium text-foreground/70 mb-1 sm:mb-2">{t("contact.form.msgLabel")}</label>
                 <textarea
-                  {...register("message", { required: "Le message est requis" })}
+                  {...register("message", { required: t("contact.form.msgReq") })}
                   rows={5}
                   className={`w-full bg-black/40 border ${errors.message ? 'border-red-500/50' : 'border-white/10'} rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-white text-sm sm:text-base focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-300 resize-none`}
-                  placeholder="Votre message"
+                  placeholder={t("contact.form.msgPlaceholder")}
                 />
                 {errors.message && (
                   <motion.span 
@@ -363,11 +364,11 @@ export default function Contact() {
                 {isSending ? (
                   <>
                     <Loader2 size={18} className="animate-spin" />
-                    <span>Envoi en cours...</span>
+                    <span>{t("contact.form.btnSending")}</span>
                   </>
                 ) : (
                   <>
-                    <span>Envoyer le message</span>
+                    <span>{t("contact.form.btnSend")}</span>
                     <Send size={16} className="group-hover:translate-x-1 transition-transform" />
                   </>
                 )}

@@ -4,40 +4,42 @@ import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Projects() {
+  const { t } = useLanguage();
   const projects = [
     {
-      title: "Système de gestion centralisée des personnels de l'Etat",
-      category: "Application Fullstack",
-      description: "Conception et réalisation d'une application web pour la gestion centralisée des personnels de l'Etat. (Projet de stage)",
+      title: t("projects.items.p1.title"),
+      category: t("projects.items.p1.cat"),
+      description: t("projects.items.p1.desc"),
       image: "https://images.unsplash.com/photo-1605433975283-263394f3514e?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       stack: ["React.js", "Tailwind CSS", "PHP", "CodeIgniter", "PostgreSQL"],
       github: "https://github.com/miaritsioryandr077",
       demo: "#",
     },
     {
-      title: "Application de gestion de commandes de restaurant",
-      category: "Application Fullstack",
-      description: "Développement d'une application permettant la gestion des commandes de nourriture et le suivi des opérations du restaurant.",
+      title: t("projects.items.p2.title"),
+      category: t("projects.items.p2.cat"),
+      description: t("projects.items.p2.desc"),
       image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       stack: ["Next.js", "Tailwind CSS", "Node.js", "Nest.js", "MongoDB"],
       github: "https://github.com/miaritsioryandr077",
       demo: "#",
     },
     {
-      title: "Application de gestion de stock produits",
-      category: "Application Fullstack",
-      description: "Création d'une application permettant l'ajout de produits, l'affichage de la liste et la visualisation d'un bilan (valeurs min., max., total) sous forme de graphique circulaire.",
+      title: t("projects.items.p3.title"),
+      category: t("projects.items.p3.cat"),
+      description: t("projects.items.p3.desc"),
       image: "https://images.unsplash.com/photo-1648824572347-517357c9c44e?q=80&w=1212&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       stack: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MySQL"],
       github: "https://github.com/miaritsioryandr077",
       demo: "#",
     },
     {
-      title: "Application de gestion de station-service",
-      category: "Application Fullstack",
-      description: "Développement d'un système de gestion de carburants, services clients et entretiens. Fonctions clés: opérations CRUD, recherche de clients, génération de reçus PDF, alertes de stock bas et statistiques (recettes, fréquentation).",
+      title: t("projects.items.p4.title"),
+      category: t("projects.items.p4.cat"),
+      description: t("projects.items.p4.desc"),
       image: "https://images.unsplash.com/photo-1567777176186-dfa735f1fe20?q=80&w=1167&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       stack: ["Laravel", "Bootstrap", "MySQL"],
       github: "https://github.com/miaritsioryandr077",
@@ -57,10 +59,10 @@ export default function Projects() {
         >
           <div className="flex items-center gap-4 mb-4">
             <div className="h-px w-12 bg-primary"></div>
-            <span className="text-primary font-space tracking-widest text-sm uppercase">Portfolio</span>
+            <span className="text-primary font-space tracking-widest text-sm uppercase">{t("projects.subtitle")}</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-space font-bold">
-            Mes Derniers <span className="text-gradient">Projets</span>
+            {t("projects.title1")} <span className="text-gradient">{t("projects.title2")}</span>
           </h2>
         </motion.div>
 
@@ -144,7 +146,7 @@ export default function Projects() {
             className="inline-flex items-center gap-2 glass px-8 py-4 rounded-xl font-medium transition-colors hover:bg-white/10"
           >
             <FaGithub size={20} />
-            Voir plus sur GitHub
+            {t("projects.btnMore")}
           </motion.a>
         </div>
       </div>
