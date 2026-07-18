@@ -4,6 +4,7 @@ import "./globals.css";
 import CustomCursor from "@/components/ui/CustomCursor";
 import LoadingScreen from "@/components/ui/LoadingScreen";
 import ScrollProgress from "@/components/ui/ScrollProgress";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -38,10 +39,12 @@ export default function RootLayout({
       className={`${inter.variable} ${poppins.variable} ${spaceGrotesk.variable} h-full antialiased dark`}
     >
       <body className="min-h-full flex flex-col font-sans overflow-x-hidden selection:bg-primary/30 selection:text-primary">
-        <LoadingScreen />
-        <CustomCursor />
-        <ScrollProgress />
-        {children}
+        <LanguageProvider>
+          <LoadingScreen />
+          <CustomCursor />
+          <ScrollProgress />
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

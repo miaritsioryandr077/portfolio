@@ -3,10 +3,13 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
+import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,12 +20,12 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Accueil", href: "#hero" },
-    { name: "À propos", href: "#about" },
-    { name: "Compétences", href: "#skills" },
-    { name: "Projets", href: "#projects" },
-    { name: "Services", href: "#services" },
-    { name: "Expérience", href: "#experience" },
+    { name: t("nav.home"), href: "#hero" },
+    { name: t("nav.about"), href: "#about" },
+    { name: t("nav.skills"), href: "#skills" },
+    { name: t("nav.projects"), href: "#projects" },
+    { name: t("nav.services"), href: "#services" },
+    { name: t("nav.experience"), href: "#experience" },
   ];
 
   return (
@@ -52,11 +55,12 @@ export default function Navbar() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
+            <LanguageSwitcher />
             <a
               href="#contact"
               className="px-5 py-2 text-sm font-semibold bg-white text-black rounded-full hover:bg-gray-200 transition-colors"
             >
-              Contact
+              {t("nav.contact")}
             </a>
           </nav>
 
@@ -86,7 +90,7 @@ export default function Navbar() {
             >
               <X size={32} />
             </button>
-            <nav className="flex flex-col gap-8 text-center">
+            <nav className="flex flex-col gap-8 text-center items-center">
               {navLinks.map((link, idx) => (
                 <a
                   key={idx}
@@ -97,12 +101,15 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
+              <div className="flex justify-center my-2">
+                <LanguageSwitcher />
+              </div>
               <a
                 href="#contact"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="mt-4 px-8 py-4 text-lg font-bold bg-white text-black rounded-full inline-block"
+                className="mt-4 px-8 py-4 text-lg font-bold bg-white text-black rounded-full inline-block text-center"
               >
-                Me Contacter
+                {t("nav.contactMe")}
               </a>
             </nav>
           </motion.div>
