@@ -24,11 +24,20 @@ export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [dropdownPosition, setDropdownPosition] = useState<"top" | "bottom">("bottom");
+  const [isMobile, setIsMobile] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     setMounted(true);
+    
+    // Détecter si c'est un appareil mobile
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
     
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -37,7 +46,10 @@ export default function LanguageSwitcher() {
     };
     
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener("resize", checkMobile);
+    };
   }, []);
 
   // Vérifier la position de la dropdown pour éviter qu'elle sorte de l'écran
@@ -45,7 +57,7 @@ export default function LanguageSwitcher() {
     if (isOpen && buttonRef.current) {
       const rect = buttonRef.current.getBoundingClientRect();
       const spaceBelow = window.innerHeight - rect.bottom;
-      const dropdownHeight = Math.min(languages.length * 45 + 20, 250); // Hauteur approximative
+      const dropdownHeight = Math.min(languages.length * 45 + 20, isMobile ? 250 : 400);
       
       if (spaceBelow < dropdownHeight) {
         setDropdownPosition("top");
@@ -53,7 +65,7 @@ export default function LanguageSwitcher() {
         setDropdownPosition("bottom");
       }
     }
-  }, [isOpen]);
+  }, [isOpen, isMobile]);
 
   if (!mounted) {
     return <div className="w-12 h-6" />; // placeholder pour éviter le saut au chargement
@@ -87,10 +99,21 @@ export default function LanguageSwitcher() {
             transition={{ duration: 0.2 }}
             className={`absolute left-1/2 -translate-x-1/2 mt-2 space-y-1 w-32 bg-black/90 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden shadow-xl z-50 py-2 ${
               dropdownPosition === "top" ? "bottom-full mb-2" : "top-full mt-2"
+            } ${
+              // ⚡ Scrollbar uniquement sur mobile
+              isMobile ? "max-h-[min(60vh,250px)] overflow-y-auto" : ""
             }`}
             style={{
-              maxHeight: "min(60vh, 250px)",
-              overflowY: "auto"
+              // Style pour cacher le scrollbar sur PC
+              ...(!isMobile && {
+                maxHeight: "none",
+                overflow: "visible",
+              }),
+              // Style pour personnaliser le scrollbar sur mobile (optionnel)
+              ...(isMobile && {
+                scrollbarWidth: "thin",
+                scrollbarColor: "rgba(255,255,255,0.3) transparent",
+              }),
             }}
           >
             {languages.map((lang) => (
