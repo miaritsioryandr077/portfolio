@@ -23,18 +23,37 @@ export default function LanguageSwitcher() {
   const { language, setLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [dropdownPosition, setDropdownPosition] = useState<"top" | "bottom">("bottom");
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     setMounted(true);
+    
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
     };
+    
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  // Vérifier la position de la dropdown pour éviter qu'elle sorte de l'écran
+  useEffect(() => {
+    if (isOpen && buttonRef.current) {
+      const rect = buttonRef.current.getBoundingClientRect();
+      const spaceBelow = window.innerHeight - rect.bottom;
+      const dropdownHeight = Math.min(languages.length * 45 + 20, 250); // Hauteur approximative
+      
+      if (spaceBelow < dropdownHeight) {
+        setDropdownPosition("top");
+      } else {
+        setDropdownPosition("bottom");
+      }
+    }
+  }, [isOpen]);
 
   if (!mounted) {
     return <div className="w-12 h-6" />; // placeholder pour éviter le saut au chargement
@@ -46,6 +65,7 @@ export default function LanguageSwitcher() {
   return (
     <div className="relative" ref={dropdownRef}>
       <button
+        ref={buttonRef}
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-2 text-sm font-medium text-foreground/70 hover:text-white transition-colors"
       >
@@ -65,7 +85,13 @@ export default function LanguageSwitcher() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="absolute left-1/2 -translate-x-1/2 mt-4 space-y-1 w-32 bg-black/90 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden shadow-xl z-50 py-2"
+            className={`absolute left-1/2 -translate-x-1/2 mt-2 space-y-1 w-32 bg-black/90 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden shadow-xl z-50 py-2 ${
+              dropdownPosition === "top" ? "bottom-full mb-2" : "top-full mt-2"
+            }`}
+            style={{
+              maxHeight: "min(60vh, 250px)",
+              overflowY: "auto"
+            }}
           >
             {languages.map((lang) => (
               <button
@@ -83,7 +109,7 @@ export default function LanguageSwitcher() {
                 <div className="flex items-center shrink-0 w-4 h-4 rounded-sm overflow-hidden">
                   <Flag country={lang.countryCode} size={16} />
                 </div>
-                <span>{lang.label}</span>
+                <span className="truncate">{lang.label}</span>
               </button>
             ))}
           </motion.div>
