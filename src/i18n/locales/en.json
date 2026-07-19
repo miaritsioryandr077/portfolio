@@ -181,8 +181,8 @@
       "msgReq": "Message is required",
       "btnSending": "Sending...",
       "btnSend": "Send message",
-      "success": "✅ Your message has been sent successfully! I will reply to you as soon as possible.",
-      "error": "❌ An error occurred. Please try again or contact me directly by email."
+      "success": "Your message has been sent successfully! I will reply to you as soon as possible.",
+      "error": "An error occurred. Please try again or contact me directly by email."
     }
   },
   "footer": {

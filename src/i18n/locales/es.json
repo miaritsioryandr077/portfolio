@@ -181,8 +181,8 @@
       "msgReq": "Se requiere mensaje",
       "btnSending": "Enviando...",
       "btnSend": "Enviar mensaje",
-      "success": "✅ ¡Su mensaje ha sido enviado con éxito! Le responderé lo más pronto posible.",
-      "error": "❌ Ocurrió un error. Por favor inténtelo de nuevo o contácteme directamente por correo electrónico."
+      "success": "¡Su mensaje ha sido enviado con éxito! Le responderé lo más pronto posible.",
+      "error": "Ocurrió un error. Por favor inténtelo de nuevo o contácteme directamente por correo electrónico."
     }
   },
   "footer": {

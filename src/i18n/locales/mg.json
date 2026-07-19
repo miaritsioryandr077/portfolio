@@ -181,8 +181,8 @@
       "msgReq": "Tsy maintsy fenoina ny hafatra",
       "btnSending": "Mandeha...",
       "btnSend": "Handefa ny hafatra",
-      "success": "✅ Voaray soa aman-tsara ny hafatrao ! Hamaly anao aho haingana araka izay tratra.",
-      "error": "❌ Nisy olana nitranga. Miangavy anao hanandrana indray na hifandray mivantana amiko."
+      "success": "Voaray soa aman-tsara ny hafatrao ! Hamaly anao aho haingana araka izay tratra.",
+      "error": "Nisy olana nitranga. Miangavy anao hanandrana indray na hifandray mivantana amiko."
     }
   },
   "footer": {

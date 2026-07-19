@@ -181,8 +181,8 @@
       "msgReq": "Nachricht ist erforderlich",
       "btnSending": "Wird gesendet...",
       "btnSend": "Nachricht senden",
-      "success": "✅ Ihre Nachricht wurde erfolgreich gesendet! Ich werde Ihnen so schnell wie möglich antworten.",
-      "error": "❌ Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie mich direkt per E-Mail."
+      "success": "Ihre Nachricht wurde erfolgreich gesendet! Ich werde Ihnen so schnell wie möglich antworten.",
+      "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie mich direkt per E-Mail."
     }
   },
   "footer": {
