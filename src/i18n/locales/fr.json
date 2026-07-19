@@ -181,8 +181,8 @@
       "msgReq": "Le message est requis",
       "btnSending": "Envoi en cours...",
       "btnSend": "Envoyer le message",
-      "success": "✅ Votre message a été envoyé avec succès ! Je vous répondrai dans les plus brefs délais.",
-      "error": "❌ Une erreur est survenue. Veuillez réessayer ou me contacter directement par email."
+      "success": "Votre message a été envoyé avec succès ! Je vous répondrai dans les plus brefs délais.",
+      "error": "Une erreur est survenue. Veuillez réessayer ou me contacter directement par email."
     }
   },
   "footer": {
